@@ -16,26 +16,6 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  // const handleLogin = async (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   try {
-  //     const result = await axios.post(
-  //       serverUrl + "api/auth/login",
-  //       { Email, Password },
-  //       { withCredentials: true }
-  //     );
-  //     console.log(result.data);
-  //     setLoading(false);
-  //     toast.success("Login Successfully");
-  //     navigate("/");
-  //   } catch (error) {
-  //     console.log(error);
-  //     setLoading(false);
-  //     toast.error(error.response?.data?.message || "Login failed. Try again.");
-  //   }
-  // };
-
   const handleLogin = async (e) => {
     e.preventDefault();
     if (!Email || !Password) {
